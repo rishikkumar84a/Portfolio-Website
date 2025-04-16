@@ -130,6 +130,22 @@ section {
     color: var(--primary-color);
 }
 
+.nav-links a.active {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient);
+    border-radius: 1px;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;

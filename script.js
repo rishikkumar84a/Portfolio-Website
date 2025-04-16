@@ -53,6 +53,34 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Add active class to navigation links based on scroll position
+function setActiveNavLink() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (window.scrollY >= (sectionTop - 150)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Call the function on scroll and on page load
+window.addEventListener('scroll', setActiveNavLink);
+window.addEventListener('load', setActiveNavLink);
+
 // Handle CV download - Remove problematic validation
 const cvButton = document.querySelector('.cv-button .btn');
 if (cvButton) {
