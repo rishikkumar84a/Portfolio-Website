@@ -53,38 +53,55 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add active class to navigation links based on scroll position
-function setActiveNavLink() {
+// Navigation active state with IntersectionObserver
+document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
-    
-    let currentSection = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.scrollY >= (sectionTop - 150)) {
-            currentSection = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
-            link.classList.add('active');
-        }
-    });
-}
 
-// Call the function on scroll and on page load
-window.addEventListener('scroll', setActiveNavLink);
-window.addEventListener('load', setActiveNavLink);
+    // Function to set the active navigation link
+    function setActiveLink(id) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // IntersectionObserver options
+    const options = {
+        root: null, // viewport as root
+        rootMargin: '-10% 0px -80% 0px', // Adjust these values to control when sections are considered "active"
+        threshold: 0 // Trigger as soon as any part of the section enters the adjusted viewport
+    };
+
+    // Create observer instance
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setActiveLink(entry.target.getAttribute('id'));
+            }
+        });
+    }, options);
+
+    // Observe all sections
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Set initial active link on page load
+    const hash = window.location.hash.substring(1);
+    if (hash && document.getElementById(hash)) {
+        setActiveLink(hash);
+    } else {
+        // Default to home section
+        setActiveLink('home');
+    }
+});
 
 // Handle CV download - Remove problematic validation
 const cvButton = document.querySelector('.cv-button .btn');
 if (cvButton) {
-    // Remove the error-prone validation code
     // The browser's native download handling is sufficient
 }
 
@@ -101,4 +118,4 @@ window.addEventListener('load', () => {
             document.head.appendChild(preloadLink);
         }
     });
-}); 
+});
