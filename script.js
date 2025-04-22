@@ -100,10 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Dynamically set current year in footer
-const yearSpan = document.getElementById('footer-year');
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+window.addEventListener('DOMContentLoaded', function() {
+  const yearSpan = document.getElementById('footer-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
 
 // Handle CV download - Remove problematic validation
 const cvButton = document.querySelector('.cv-button .btn');
