@@ -2,7 +2,8 @@
 
 A modern, responsive portfolio website for Rishik Kumar Chaurasiya, showcasing his skills, projects, and contact information.
 
-**Live Website: [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live)**
+**Live Website: [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live)**  
+**Source Code: [GitHub Repository](https://github.com/rishikkumar84a/Portfolio-Website)**
 
 ## Features
 
@@ -15,12 +16,15 @@ A modern, responsive portfolio website for Rishik Kumar Chaurasiya, showcasing h
 - Contact section with social media links
 - Updated CV with download functionality
 - Clean, maintainable code structure
+- SEO optimized with sitemap.xml and robots.txt
 
 ## Recent Updates
 
 - **Navigation Active State**: Implemented scroll-based navigation highlighting using IntersectionObserver API for better UX while scrolling
 - **Custom Favicon**: Added personalized favicon using profile image for better brand recognition
 - **Updated CV**: Refreshed CV document with latest information and improved download functionality
+- **SEO Improvements**: Added sitemap.xml and robots.txt for better search engine indexing
+- **Performance Optimizations**: Improved loading times and overall site performance
 
 ## Technologies Used
 
@@ -29,6 +33,8 @@ A modern, responsive portfolio website for Rishik Kumar Chaurasiya, showcasing h
 - JavaScript (ES6+)
 - AOS (Animate On Scroll) library for scroll animations
 - IntersectionObserver API for navigation enhancements
+- GitHub Pages for hosting
+- Custom domain configuration
 
 ## Pages/Sections
 
@@ -40,16 +46,23 @@ A modern, responsive portfolio website for Rishik Kumar Chaurasiya, showcasing h
 
 ## Local Development
 
-1. Clone the repository
-2. Open `index.html` in your browser to view the website
-3. Edit files as needed:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rishikkumar84a/Portfolio-Website.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio-Website
+   ```
+3. Open `index.html` in your browser to view the website
+4. Edit files as needed:
    - `index.html` for content structure
    - `styles.css` for styling
    - `script.js` for functionality
 
 ## Deployment
 
-This website is hosted on GitHub Pages. To deploy your own version:
+This website is hosted on GitHub Pages with a custom domain. To deploy your own version:
 
 1. Fork this repository
 2. Go to your repository settings
@@ -57,17 +70,40 @@ This website is hosted on GitHub Pages. To deploy your own version:
 4. Select the branch you want to deploy (usually main/master)
 5. Save your changes and wait for GitHub to build and deploy your site
 6. Access your site at `https://<your-github-username>.github.io/Portfolio-Website`
+7. (Optional) Configure a custom domain in the GitHub Pages settings
 
 ## Browser Compatibility
 
 Tested and working on:
-- Chrome
-- Firefox
-- Edge
-- Safari
+- Chrome (latest)
+- Firefox (latest)
+- Edge (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome for Android)
+
+## SEO Optimization
+
+The website includes:
+- Proper meta tags for description and keywords
+- Structured HTML5 semantic elements
+- sitemap.xml for search engine crawling
+- robots.txt for crawler instructions
+- Optimized image alt attributes
+
+## Future Enhancements
+
+- Dark/Light mode toggle
+- Blog section for technical articles
+- More interactive project demos
+- Contact form with backend integration
 
 ## Credits
 
 - Fonts: Inter from Google Fonts
 - Animation: AOS (Animate On Scroll) library
 - Icons: Custom icons provided by Rishik Kumar Chaurasiya
+- Hosting: GitHub Pages
+
+## License
+
+This project is available as open source under the terms of the MIT License.
