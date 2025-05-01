@@ -116,6 +116,17 @@ section {
     color: transparent;
 }
 
+.logo img {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
