@@ -31,6 +31,7 @@
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="blog-link" target="_blank">Blog</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -243,5 +244,19 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+    
+    <script>
+        // Blog link handler - you can update the URL later
+        document.getElementById('blog-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Replace the URL below with your actual blog URL when you have it
+            const blogUrl = "#"; // Placeholder - update this later
+            if (blogUrl !== "#") {
+                window.open(blogUrl, '_blank');
+            } else {
+                alert("Blog coming soon!");
+            }
+        });
+    </script>
 </body>
 </html>
