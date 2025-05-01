@@ -3,7 +3,8 @@
 A modern, responsive portfolio website for Rishik Kumar Chaurasiya, an aspiring AI/ML Engineer, showcasing skills, projects, and contact information.
 
 **Live Website: [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live)**  
-**Source Code: [GitHub Repository](https://github.com/rishikkumar84a/Portfolio-Website)**
+**Source Code: [GitHub Repository](https://github.com/rishikkumar84a/Portfolio-Website)**  
+**Blog: [https://blog.rishikkumarchaurasiya.live/](https://blog.rishikkumarchaurasiya.live/)**
 
 ## Features
 
@@ -18,9 +19,11 @@ A modern, responsive portfolio website for Rishik Kumar Chaurasiya, an aspiring 
 - Clean, maintainable code structure
 - SEO optimized with sitemap.xml and robots.txt
 - Custom domain setup with CNAME configuration
+- External blog section on a subdomain
 
 ## Recent Updates
 
+- **Blog Integration**: Added a dedicated blog section on a subdomain for sharing articles and insights
 - **Navigation Active State**: Implemented scroll-based navigation highlighting using IntersectionObserver API for better UX while scrolling
 - **Custom Favicon**: Added personalized favicon using profile image for better brand recognition
 - **Updated CV**: Refreshed CV document with latest information and improved download functionality
@@ -52,6 +55,7 @@ A modern, responsive portfolio website for Rishik Kumar Chaurasiya, an aspiring 
    - Currency Converter
    - Modern Todo List App
 5. **Contact** - Links to various social media profiles and contact methods
+6. **Blog** - External link to a dedicated blog on a subdomain for articles and insights
 
 ## Project Structure
 
@@ -133,9 +137,9 @@ The website includes:
 ## Future Enhancements
 
 - Dark/Light mode toggle
-- Blog section for technical articles
 - More interactive project demos
 - Contact form with backend integration
+- Expanding the blog with categories and search functionality
 
 ## Credits
 
