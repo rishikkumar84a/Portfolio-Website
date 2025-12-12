@@ -1,43 +1,115 @@
-# Modern Portfolio Website - Rishik Kumar Chaurasiya
 
-A premium, high-performance portfolio website built with **Next.js 16**, **Tailwind CSS v4**, and **Framer Motion**.
+# 🌐 Rishik Kumar Chaurasiya — Portfolio Website
 
-## Tech Stack
-- **Framework**: Next.js 16 (App Router)
-- **Styling**: Tailwind CSS v4
-- **Language**: TypeScript
-- **Animations**: Framer Motion, React Type Animation
-- **Icons**: React Icons
-- **Deployment**: GitHub Pages / Vercel / Netlify Ready
+A modern and responsive portfolio website built to showcase my skills, experience, and projects. Designed with clean UI, fast performance, and strong SEO fundamentals.
 
-## Getting Started
+🔗 **Live Website:** [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)  
+📁 **GitHub Repository:** [https://github.com/rishikkumar84a/Portfolio-Website](https://github.com/rishikkumar84a/Portfolio-Website)  
+📝 **Blog:** [https://blog.rishikkumarchaurasiya.live](https://blog.rishikkumarchaurasiya.live)  
 
-1.  **Install Dependencies**
-    ```bash
-    npm install
-    ```
+---
 
-2.  **Run Development Server**
-    ```bash
-    npm run dev
-    ```
-    Open [http://localhost:3000](http://localhost:3000) with your browser.
+## 🚀 Features
 
-3.  **Build for Production**
-    ```bash
-    npm run build
-    npm start
-    ```
+- Fully responsive design for all devices  
+- Modern UI with smooth animations  
+- Project showcase with direct GitHub links  
+- SEO-optimized (sitemap, robots, metadata)  
+- Fast load times with optimized static assets  
+- Contact section with social links  
+- Clean folder structure for easy customization  
+- Scroll-active navigation highlights  
+- Custom branding with favicon & color theme  
 
-## Project Structure
-- `src/app`: Page routes and global layout.
-- `src/components`: UI components and sections.
-- `src/data`: Static content (projects, experience, certifications).
-- `public/assets`: Static assets (images, resume).
-- `legacy_backup`: Backup of the previous website files.
+---
 
-## Features
-- **Dark Mode First**: Sleek modern design.
-- **Responsive**: Fully optimized for mobile, tablet, and desktop.
-- **Dynamic Content**: Typewriter effects, scroll animations, glassmorphism.
-- **SEO Optimized**: Meta tags and semantic HTML.
+## 🛠️ Technologies Used
+
+- **HTML5**  
+- **CSS3** (Flexbox, Grid)  
+- **JavaScript (ES6+)**  
+- **AOS** (Animate On Scroll)  
+- **Font Awesome**  
+- **Google Fonts — Inter**  
+- **IntersectionObserver API**
+
+---
+
+## 🗂️ Website Sections
+
+### 🔹 **Home / Hero**
+Intro, profile image, profession, and quick actions.
+
+### 🔹 **About**
+Professional background, skills, education, and career summary.
+
+### 🔹 **Projects**
+Highlighted portfolio projects with descriptions and GitHub links.
+
+### 🔹 **Contact**
+Social media icons + ways to reach out.
+
+### 🔹 **Blog**
+Link to personal writing/blog space.
+
+---
+
+## 📦 Folder Structure
+
+```
+Portfolio-Website/
+│── assets/
+│ ├── css/
+│ ├── js/
+│ ├── images/
+│── index.html
+│── robots.txt
+│── sitemap.xml
+│── README.md
+```
+
+---
+
+## 🛠️ Local Development Setup
+
+To run locally:
+
+```bash
+git clone https://github.com/rishikkumar84a/Portfolio-Website.git
+cd Portfolio-Website
+open index.html
+```
+No build step needed — this is a static website.
+
+## 🚀 Deployment
+This portfolio can be deployed anywhere:
+GitHub Pages, Vercel, Netlify, Cloudflare Pages, or any static host.
+
+Example (GitHub Pages):
+
+1. Push changes to `main` branch
+2. Go to Settings → Pages
+3. Select branch `main` as the source
+4. Save and wait for deployment
+
+**Live at:**  
+[https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)
+
+## 🔍 SEO & Performance
+Includes:
+- `sitemap.xml`
+- `robots.txt`
+- Semantic HTML
+- Optimized images
+- Fast CSS & JS
+
+## 🌱 Future Enhancements
+- Add dark/light mode
+- Add backend contact form
+- Add project category filters
+- Add blog search and pagination
+
+## 📬 Contact
+**Rishik Kumar Chaurasiya**  
+🌐 Portfolio: [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)  
+📝 Blog: [https://blog.rishikkumarchaurasiya.live](https://blog.rishikkumarchaurasiya.live)
