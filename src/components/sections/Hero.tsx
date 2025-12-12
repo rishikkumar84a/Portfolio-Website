@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaEye, FaDownload, FaFilePdf, FaFileWord } from "react-icons/fa";
 
 export default function Hero() {
+    const [isDownloadOpen, setIsDownloadOpen] = useState(false);
+
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-900 pt-16">
             {/* Background Effects */}
@@ -58,18 +61,46 @@ export default function Hero() {
                     >
                         <Link
                             href="#projects"
-                            className="px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg shadow-primary/25"
+                            className="px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg shadow-primary/25 flex items-center gap-2"
                         >
-                            View My Work
+                            <FaEye /> View My Work
                         </Link>
-                        <a
-                            href="/assets/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-8 py-3 border border-white/20 hover:bg-white/5 text-slate-200 rounded-full font-medium transition-all hover:border-white/40"
-                        >
-                            Download Resume
-                        </a>
+
+                        <div className="relative">
+                            <button
+                                onClick={() => setIsDownloadOpen(!isDownloadOpen)}
+                                onBlur={() => setTimeout(() => setIsDownloadOpen(false), 200)}
+                                className="px-8 py-3 bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-800 hover:border-zinc-700 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+                            >
+                                <FaDownload /> Download <span className="text-xs">▼</span>
+                            </button>
+
+                            <AnimatePresence>
+                                {isDownloadOpen && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 10 }}
+                                        className="absolute top-full mt-2 left-0 w-full bg-dark-800 border border-white/10 rounded-xl overflow-hidden shadow-xl flex flex-col z-50"
+                                    >
+                                        <a
+                                            href="/assets/resume.pdf"
+                                            download="Rishik_Resume.pdf"
+                                            className="px-4 py-3 hover:bg-white/5 text-slate-300 flex items-center gap-2 text-sm transition-colors"
+                                        >
+                                            <FaFilePdf className="text-red-400" /> PDF Version
+                                        </a>
+                                        <a
+                                            href="/assets/resume.docx"
+                                            download="Rishik_Resume.docx"
+                                            className="px-4 py-3 hover:bg-white/5 text-slate-300 flex items-center gap-2 text-sm transition-colors"
+                                        >
+                                            <FaFileWord className="text-blue-400" /> DOCX Version
+                                        </a>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
                     </motion.div>
 
                     <motion.div
