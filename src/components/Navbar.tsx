@@ -53,9 +53,9 @@ export default function Navbar() {
                         href="/assets/resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 border border-primary text-primary rounded-md text-sm hover:bg-primary/10 transition-colors"
+                        className="px-4 py-2 border border-primary text-primary rounded-md text-sm hover:bg-primary/10 transition-colors flex items-center gap-2"
                     >
-                        Resume
+                        View Resume
                     </a>
                 </div>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
                                 className="px-6 py-2 border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
-                                Download Resume
+                                View Resume
                             </a>
                         </div>
                     </motion.div>
