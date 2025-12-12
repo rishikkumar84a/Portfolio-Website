@@ -1,0 +1,43 @@
+ ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\rishi\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\rishi\Downloads\Portfolio Website\package-lock.json
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+Error: Cannot apply unknown utility class `bg-dark-900`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [at onInvalidCandidate (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:21:1314)]
+    [at Te (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:16:36652)]
+    [at C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:21:355]
+    [at Rr (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:3:1718)]
+    [at _ (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:3:1377)]
+    [at $e (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:21:172)]
+    [at un (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:38:294)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]
+    [at async cn (C:\Users\rishi\Downloads\Portfolio Website\node_modules\tailwindcss\dist\lib.js:38:631)]
+    [at async Xr (C:\Users\rishi\Downloads\Portfolio Website\node_modules\@tailwindcss\node\dist\index.js:10:3417)]
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./Downloads/Portfolio Website/src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\rishi\Downloads\Portfolio Website\src\app\globals.css:1:1: Cannot apply unknown utility class `bg-dark-900`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at Input.error (Downloads/Portfolio Website/node_modules/postcss/lib/input.js:135:16) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\b54e3_caa600bd._.js:4651:22]
+    at Root.error (Downloads/Portfolio Website/node_modules/postcss/lib/node.js:146:32) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\b54e3_caa600bd._.js:928:38]
+    [at Object.Once (C:\Users\rishi\Downloads\Portfolio Website\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]
+    at async LazyResult.runAsync (Downloads/Portfolio Website/node_modules/postcss/lib/lazy-result.js:293:11) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\b54e3_caa600bd._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\[root-of-the-server]__3456e52c._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\[root-of-the-server]__631e1f94._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/Portfolio Website/src/app/globals.css [Client Component Browser]
+    ./Downloads/Portfolio Website/src/app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\[root-of-the-server]__3456e52c._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\rishi\Downloads\Portfolio Website\.next\build\chunks\[root-of-the-server]__631e1f94._.js:443:31])
