@@ -8,7 +8,7 @@ A premium, high-performance portfolio website built with **Next.js 16**, **Tailw
 - **Language**: TypeScript
 - **Animations**: Framer Motion, React Type Animation
 - **Icons**: React Icons
-- **Deployment**: Vercel/Netlify Ready
+- **Deployment**: GitHub Pages / Vercel / Netlify Ready
 
 ## Getting Started
 
