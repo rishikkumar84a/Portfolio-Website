@@ -17,16 +17,41 @@ export default function Contact() {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [isError, setIsError] = useState(false);
 
     const onSubmit = async (data: FormData) => {
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        console.log(data);
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        reset();
-        setTimeout(() => setIsSuccess(false), 5000);
+        setIsError(false);
+
+        try {
+            const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
+
+            if (!formspreeEndpoint) {
+                throw new Error("Missing Formspree endpoint");
+            }
+
+            const response = await fetch(formspreeEndpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submission failed");
+            }
+
+            setIsSuccess(true);
+            reset();
+            setTimeout(() => setIsSuccess(false), 5000);
+        } catch (error) {
+            console.error(error);
+            setIsError(true);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -129,6 +154,11 @@ export default function Contact() {
                                     </>
                                 )}
                             </button>
+                            {isError && (
+                                <p className="text-red-500 text-sm">
+                                    Something went wrong. Please try again in a moment.
+                                </p>
+                            )}
                         </form>
                     </motion.div>
                 </div>

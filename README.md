@@ -81,6 +81,16 @@ open index.html
 ```
 No build step needed — this is a static website.
 
+### Contact Form
+
+This project uses Formspree to deliver contact submissions to your inbox. Create a `.env.local` file and add:
+
+```bash
+NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/your-id
+```
+
+Restart the dev server after adding the variable.
+
 ## 🚀 Deployment
 This portfolio can be deployed anywhere:
 GitHub Pages, Vercel, Netlify, Cloudflare Pages, or any static host.
