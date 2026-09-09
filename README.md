@@ -3,7 +3,7 @@
 
 A modern and responsive portfolio website built to showcase my skills, experience, and projects. Designed with clean UI, fast performance, and strong SEO fundamentals.
 
-🔗 **Live Website:** [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)  
+🔗 **Live Website:** [https://rishik.tech](https://rishik.tech) & [https://www.rishik.tech](https://www.rishik.tech)  
 📁 **GitHub Repository:** [https://github.com/rishikkumar84a/Portfolio-Website](https://github.com/rishikkumar84a/Portfolio-Website)  
 📝 **Blog:** [https://blog.rishikkumarchaurasiya.live](https://blog.rishikkumarchaurasiya.live)  
 
@@ -103,7 +103,7 @@ Example (GitHub Pages):
 4. Save and wait for deployment
 
 **Live at:**  
-[https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)
+[https://rishik.tech](https://rishik.tech) & [https://www.rishik.tech](https://www.rishik.tech)
 
 ## 🔍 SEO & Performance
 Includes:
@@ -121,5 +121,5 @@ Includes:
 
 ## 📬 Contact
 **Rishik Kumar Chaurasiya**  
-🌐 Portfolio: [https://rishikkumarchaurasiya.live](https://rishikkumarchaurasiya.live) & [https://www.rishikkumarchaurasiya.live](https://www.rishikkumarchaurasiya.live)  
+🌐 Portfolio: [https://rishik.tech](https://rishik.tech) & [https://www.rishik.tech](https://www.rishik.tech)  
 📝 Blog: [https://blog.rishikkumarchaurasiya.live](https://blog.rishikkumarchaurasiya.live)
